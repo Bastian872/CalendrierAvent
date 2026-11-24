@@ -1,3 +1,48 @@
+body{
+
+    background:
+    radial-gradient(
+        circle at top,
+        #1b1b1b,
+        #080808 35%,
+        #000000 100%
+    );
+
+    background-attachment:fixed;
+
+    color:white;
+
+    font-family:Arial,sans-serif;
+
+    text-align:center;
+
+    margin:0;
+
+    padding:80px 30px 30px 30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.date{
+
+    color:#D4AF37;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    letter-spacing:8px;
+
+    margin-bottom:25px;
+
+    text-shadow:
+        0 0 20px rgba(212,175,55,.45),
+        0 0 40px rgba(212,175,55,.25);
+}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,15 +62,47 @@ circle at top,
 );
 
 background-attachment:fixed;
-.date{text-shadow:
-0 0 20px rgba(212,175,55,.35);color:#D4AF37;font-size:22px;letter-spacing:4px;text-transform:uppercase;margin-bottom:60px}
-.card{
+.date{
 
-    width:460px;
+    color:#D4AF37;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    letter-spacing:8px;
+
+    margin-bottom:25px;
+
+    text-shadow:
+        0 0 20px rgba(212,175,55,.45),
+        0 0 40px rgba(212,175,55,.25);
+
+}
+
+    width:540px;
 
     max-width:92%;
 
-    margin:12px auto;
+    margin:0 auto;
+
+    padding:0;
+
+    overflow:hidden;
+
+    border-radius:34px;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+}
+.card{
+
+    width:540px;
+
+    max-width:92%;
+
+    margin:0 auto;
 
     padding:0;
 
@@ -38,6 +115,20 @@ background-attachment:fixed;
     transition:.35s ease;
 }
 
+.card + .card{
+
+    margin-top:-15px;
+}
+
+.card:hover{
+
+    transform:
+        translateY(-10px)
+        scale(1.02);
+}
+
+
+
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -49,12 +140,27 @@ align-items:center;
     scale(1.02);
 }
 .card img{
-filter:
-drop-shadow(0 0 25px rgba(212,175,55,.20));
 
-transition:.4s ease;
+    width:100%;
+
+    display:block;
+
+    border-radius:34px;
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.55);
+
+    filter:
+        drop-shadow(
+            0 0 25px
+            rgba(212,175,55,.20)
+        );
+
+    transition:.4s ease;
+}
 
 .card img:hover{
+
     transform:scale(1.015);
 }
 
