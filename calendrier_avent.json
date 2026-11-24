@@ -1,0 +1,24 @@
+[
+  {
+    "jour": 24,
+    "coeur": "MESSAGE COEUR TEST",
+    "coeurImage": "images/coeur-24.jpg",
+
+    "hot": "MESSAGE HOT TEST",
+    "hotImage": "",
+
+    "ouch": "MESSAGE OUCH TEST",
+    "ouchImage": ""
+  },
+  {
+    "jour": 2,
+    "coeur": "Chaque jour est une occasion de te retrouver.",
+    "coeurImage": "",
+
+    "hot": "La confiance est le plus beau des vêtements.",
+    "hotImage": "",
+
+    "ouch": "Les plus belles transformations commencent souvent dans l’inconfort.",
+    "ouchImage": ""
+  }
+]
