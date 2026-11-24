@@ -48,7 +48,7 @@ body{background:radial-gradient(circle at top,#1b1b1b 0%,#080808 40%,#000 100%);
 
 .card + .card{
 
-    margin-top:-10px;
+    margin-top:-10px;<div id="messageScreen">
 }
 
 
@@ -146,6 +146,85 @@ body{background:radial-gradient(circle at top,#1b1b1b 0%,#080808 40%,#000 100%);
         0 0 10px rgba(212,175,55,.45);
 }
 
+.message-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+#cardImage img{
+
+    width:100%;
+
+    max-width:650px;
+
+    max-height:420px;
+
+    object-fit:cover;
+
+    border-radius:36px;
+
+    box-shadow:
+        0 30px 100px rgba(0,0,0,.65);
+
+    margin-bottom:25px;
+}
+
+.message-panel{
+
+    max-width:700px;
+
+    padding:0 20px;
+}
+
+.bigTitle{
+
+    color:#D4AF37;
+
+    font-size:56px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    text-shadow:
+        0 0 20px rgba(212,175,55,.4);
+}
+
+.message{
+
+    color:white;
+
+    font-size:30px;
+
+    line-height:1.8;
+
+    text-align:center;
+
+    margin-bottom:40px;
+}
+
+.share{
+
+    font-size:70px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.share:hover{
+
+    transform:scale(1.08);
+}
+
 </style>
 </head><body>
 <div id="homeScreen"><div class="date" id="todayDate"></div>
@@ -168,7 +247,35 @@ body{background:radial-gradient(circle at top,#1b1b1b 0%,#080808 40%,#000 100%);
   <img src="ui/card-ouch.webp">
 </div>
 </div>
-<div id="messageScreen"><div id="cardTitle" class="bigTitle"></div><div id="cardImage"></div><div id="cardMessage" class="message"></div><div class="share" onclick="sendMessage()">💌❤️</div><br><button class="backButton" onclick="goBack()">Retour</button></div>
+<div id="messageScreen">
+
+    <div class="message-container">
+
+        <div id="cardImage"></div>
+
+        <div class="message-panel">
+
+            <div id="cardTitle"
+                 class="bigTitle">
+            </div>
+
+            <div id="cardMessage"
+                 class="message">
+            </div>
+
+        </div>
+
+        <div class="share"
+             onclick="sendMessage()">
+
+            💌❤️
+
+        </div>
+
+    </div>
+
+</div>
+
 <script>
 const d=new Date();const mois=['JANVIER','FÉVRIER','MARS','AVRIL','MAI','JUIN','JUILLET','AOÛT','SEPTEMBRE','OCTOBRE','NOVEMBRE','DÉCEMBRE'];document.getElementById('todayDate').innerText=d.getDate()+' '+mois[d.getMonth()];
 let contenu=null;fetch('calendrier_avent.json').then(r=>r.json()).then(data=>{const jour=d.getDate();contenu=data.find(i=>i.jour===jour)||data[0];document.querySelector('.heartCard').onclick=()=>showMessage('♡',contenu.coeur||'',contenu.coeurImage||'');document.querySelector('.hotCard').onclick=()=>showMessage('HOT',contenu.hot||'',contenu.hotImage||'');document.querySelector('.ouchCard').onclick=()=>showMessage('OUCH!',contenu.ouch||'',contenu.ouchImage||'');});
