@@ -10,7 +10,42 @@
 <style>
 body{background:radial-gradient(circle at top,#1b1b1b 0%,#080808 40%,#000 100%);color:white;font-family:Arial,sans-serif;text-align:center;padding:30px;margin:0}
 .date{color:#D4AF37;font-size:22px;letter-spacing:4px;text-transform:uppercase;margin-bottom:40px}
-.card{width:500px;max-width:90%;margin:25px auto;padding:35px;border-radius:32px;cursor:pointer;transition:.35s ease}
+.card{
+
+    width:540px;
+
+    max-width:92%;
+
+    margin:28px auto;
+
+    padding:0;
+
+    overflow:hidden;
+
+    border-radius:34px;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+}
+
+.card:hover{
+
+    transform:
+    translateY(-10px)
+    scale(1.02);
+}
+.card img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:34px;
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.55);
+}
 .card:hover{transform:translateY(-6px) scale(1.02)}
 .heartCard{background:linear-gradient(145deg,rgba(255,255,255,.95),rgba(220,220,220,.85));color:#111}
 .hotCard{background:linear-gradient(145deg,#5b0000,#b50016,#ff1738)}
@@ -21,8 +56,18 @@ body{background:radial-gradient(circle at top,#1b1b1b 0%,#080808 40%,#000 100%);
 .share{margin-top:40px;display:inline-block;padding:18px 35px;border-radius:20px;background:linear-gradient(145deg,#D4AF37,#F4D03F);color:black;font-size:22px;font-weight:600;cursor:pointer}.backButton{margin-top:25px;padding:16px 28px;border:none;border-radius:16px;background:rgba(255,255,255,.08);color:white}
 </style>
 </head><body>
-<div id="homeScreen"><div class="date" id="todayDate"></div><div class="card heartCard"><div class="title">♡</div><div class="subtitle">Pour se (re)découvrir...</div></div><div class="card hotCard"><div class="title">HOT</div><div class="subtitle">Pour se (re)découvrir en profondeur...</div></div><div class="card ouchCard"><div class="title">OUCH!</div><div class="subtitle">Pour réveiller la tigresse qui sommeille en toi.</div></div></div>
-<div id="messageScreen"><div id="cardTitle" class="bigTitle"></div><div id="cardImage"></div><div id="cardMessage" class="message"></div><div class="share" onclick="sendMessage()">💌 Envoyer un message</div><br><button class="backButton" onclick="goBack()">Retour</button></div>
+<div id="homeScreen"><div class="date" id="todayDate"></div><div class="card heartCard">
+  <img src="ui/card-heart.webp">
+</div>
+
+<div class="card hotCard">
+  <img src="ui/card-hot.webp">
+</div>
+
+<div class="card ouchCard">
+  <img src="ui/card-ouch.webp">
+</div>
+<div id="messageScreen"><div id="cardTitle" class="bigTitle"></div><div id="cardImage"></div><div id="cardMessage" class="message"></div><div class="share" onclick="sendMessage()">💌❤️</div><br><button class="backButton" onclick="goBack()">Retour</button></div>
 <script>
 const d=new Date();const mois=['JANVIER','FÉVRIER','MARS','AVRIL','MAI','JUIN','JUILLET','AOÛT','SEPTEMBRE','OCTOBRE','NOVEMBRE','DÉCEMBRE'];document.getElementById('todayDate').innerText=d.getDate()+' '+mois[d.getMonth()];
 let contenu=null;fetch('calendrier_avent.json').then(r=>r.json()).then(data=>{const jour=d.getDate();contenu=data.find(i=>i.jour===jour)||data[0];document.querySelector('.heartCard').onclick=()=>showMessage('♡',contenu.coeur||'',contenu.coeurImage||'');document.querySelector('.hotCard').onclick=()=>showMessage('HOT',contenu.hot||'',contenu.hotImage||'');document.querySelector('.ouchCard').onclick=()=>showMessage('OUCH!',contenu.ouch||'',contenu.ouchImage||'');});
