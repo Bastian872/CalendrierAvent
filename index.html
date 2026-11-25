@@ -508,6 +508,24 @@ body{
     transition:.8s ease;
 }
 
+.fade-in{
+
+    opacity:1;
+
+    transform:scale(1);
+
+    transition:.8s ease;
+}
+
+.fade-out{
+
+    opacity:0;
+
+    transform:scale(.98);
+
+    transition:.4s ease;
+}
+
 </style>
 </head><body>
 <div id="homeScreen"><div class="date" id="todayDate"></div>
@@ -658,15 +676,27 @@ function goBack(){
         homeScreen.style.display =
             "block";
 
-        messageScreen.classList.remove(
-            "fade-out"
-        );
-
         homeScreen.classList.remove(
             "fade-out"
         );
 
-    },300);
+        messageScreen.classList.remove(
+            "fade-out"
+        );
+
+        homeScreen.classList.add(
+            "fade-in"
+        );
+
+        setTimeout(() => {
+
+            homeScreen.classList.remove(
+                "fade-in"
+            );
+
+        },800);
+
+    },400);
 }
 
 function sendMessage(){
