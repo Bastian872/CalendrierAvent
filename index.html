@@ -414,28 +414,15 @@ top:18px;
 
 .message-overlay{
 
-    position:absolute;
+    position:fixed;
 
     inset:0;
 
     z-index:2;
 
-    overflow-y:auto;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    padding-top:180px;
-
-    padding-bottom:120px;
-
-    padding-left:30px;
-
-    padding-right:30px;
+    overflow:hidden;
 }
+
 .message-topbar{
 
     position:fixed;
@@ -526,6 +513,29 @@ body{
     transition:.4s ease;
 }
 
+.message-scroll{
+
+    position:absolute;
+
+    top:180px;
+
+    left:0;
+
+    right:0;
+
+    bottom:120px;
+
+    height:100%;
+
+    overflow-y:auto;
+
+    padding-left:30px;
+
+    padding-right:30px;
+
+    text-align:center;
+}
+
 </style>
 </head><body>
 <div id="homeScreen"><div class="date" id="todayDate"></div>
@@ -573,13 +583,18 @@ body{
     <div class="message-overlay">
 
     
-<div id="cardTitle"
-     class="bigTitle">
+<div class="message-scroll">
+
+    <div id="cardTitle"
+         class="bigTitle">
+    </div>
+
+    <div id="cardMessage"
+         class="message">
+    </div>
+
 </div>
 
-<div id="cardMessage"
-     class="message">
-</div>
 </div>
 
     </div>
