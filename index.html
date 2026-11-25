@@ -693,7 +693,7 @@ ${mois[d.getMonth()]}
 
 let contenu=null;fetch('calendrier_avent.json').then(r=>r.json()).then(data=>{const jour=d.getDate();contenu=data.find(i=>i.jour===jour)||data[0];document.querySelector('.heartCard').onclick=()=>
 showMessage(
-    '♡',
+    
     contenu.coeur||'',
     contenu.coeurSms||'',
     contenu.coeurImage||''
