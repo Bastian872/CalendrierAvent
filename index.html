@@ -127,8 +127,14 @@ body{
 }
 .title{font-size:52px;font-weight:700}.subtitle{font-size:24px}.heartCard .title,.heartCard .subtitle{color:#111}.hotCard .title,.hotCard .subtitle,.ouchCard .title,.ouchCard .subtitle{color:white}
 #messageScreen{
-    display:none;
+
+    background-size:cover;
+
+    background-position:center 15%;
+
+    background-repeat:no-repeat;
 }
+
 
 .bigTitle{
     color:#D4AF37;
@@ -244,9 +250,13 @@ body{
 
 .share{
 
-    font-size:130px;
+    font-size:120px;
 
     cursor:pointer;
+
+    text-shadow:none;
+
+    filter:none;
 }
 
 .share:hover{
@@ -257,15 +267,19 @@ body{
 
 .backButton{
 
-    font-size:95px;
+    font-size:75px;
 
-    font-weight:900;
+    font-weight:400;
 
     color:#D4AF37;
 
     cursor:pointer;
 
-    text-shadow:none;
+    text-shadow:
+        -2px 0 #000,
+         2px 0 #000,
+         0 -2px #000,
+         0 2px #000;
 }
 
 .backButton:hover{
