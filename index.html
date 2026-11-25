@@ -595,6 +595,18 @@ body{
     text-align:center;
 }
 
+.dayNumber{
+
+    font-size:72px;
+
+    margin-right:12px;
+}
+
+.monthName{
+
+    font-size:48px;
+}
+
 </style>
 </head><body>
 <div id="homeScreen"><div class="date" id="todayDate"></div>
@@ -672,7 +684,17 @@ body{
 </div>
 
 <script>
-const d=new Date();const mois=['JANVIER','FÉVRIER','MARS','AVRIL','MAI','JUIN','JUILLET','AOÛT','SEPTEMBRE','OCTOBRE','NOVEMBRE','DÉCEMBRE'];document.getElementById('todayDate').innerText=d.getDate()+' '+mois[d.getMonth()];
+const d=new Date();const mois=['JANVIER','FÉVRIER','MARS','AVRIL','MAI','JUIN','JUILLET','AOÛT','SEPTEMBRE','OCTOBRE','NOVEMBRE','DÉCEMBRE'];document.getElementById('todayDate')
+.innerHTML =
+
+`<span class="dayNumber">
+${d.getDate()}
+</span>
+
+<span class="monthName">
+${mois[d.getMonth()]}
+</span>`;
+
 let contenu=null;fetch('calendrier_avent.json').then(r=>r.json()).then(data=>{const jour=d.getDate();contenu=data.find(i=>i.jour===jour)||data[0];document.querySelector('.heartCard').onclick=()=>
 showMessage(
     '♡',
