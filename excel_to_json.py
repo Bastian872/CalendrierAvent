@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 
-excel_file = "Calendrier/Calendrier_Avent_72_Messages_Complet.xlsx"
+excel_file ="Calendrier_Avent_SMS_Differencies.xlsx"
 
 json_file = "calendrier_avent.json"
 
@@ -11,22 +11,23 @@ result = []
 
 for _, row in df.iterrows():
 
-    result.append({
+   result.append({
 
-        "jour": int(row["Jour"]),
+    "jour": int(row["Jour"]),
 
-        "coeur": str(row["CoeurMessage"]),
-        "coeurImage": "images/" + str(row["CoeurImage"]),
+    "coeur": str(row["CoeurMessage"]),
+    "coeurSms": str(row["CoeurSMS"]),
+    "coeurImage": "images/" + str(row["CoeurImage"]),
 
-        "hot": str(row["HotMessage"]),
-        "hotImage": "images/" + str(row["HotImage"]),
+    "hot": str(row["HotMessage"]),
+    "hotSms": str(row["HotSMS"]),
+    "hotImage": "images/" + str(row["HotImage"]),
 
-        "ouch": str(row["OuchMessage"]),
-        "ouchImage": "images/" + str(row["OuchImage"]),
+    "ouch": str(row["OuchMessage"]),
+    "ouchSms": str(row["OuchSMS"]),
+    "ouchImage": "images/" + str(row["OuchImage"])
 
-        "sms": str(row["SMS"])
-
-    })
+})
 
 with open(
     json_file,

@@ -2,241 +2,289 @@
   {
     "jour": 1,
     "coeur": "Accueille cette aventure avec douceur.",
+    "coeurSms": "✨ Pensée du jour ✨ Accueille cette aventure avec douceur.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Ose davantage aujourd’hui.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Ose davantage aujourd’hui.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Les plus belles victoires naissent de l’audace.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 1 ❤️"
+    "ouchSms": "🖤 Les plus belles victoires naissent de l’audace.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 2,
     "coeur": "Chaque jour est une occasion de te retrouver.",
+    "coeurSms": "✨ Pensée du jour ✨ Chaque jour est une occasion de te retrouver.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "La confiance est ton plus bel atout.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. La confiance est ton plus bel atout.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Les transformations commencent hors de la zone de confort.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 2 ❤️"
+    "ouchSms": "🖤 Les transformations commencent hors de la zone de confort.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 3,
     "coeur": "Écoute ce que ton cœur murmure.",
+    "coeurSms": "✨ Pensée du jour ✨ Écoute ce que ton cœur murmure.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Exprime ce que tu désires.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Exprime ce que tu désires.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Une faiblesse peut devenir une force.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 3 ❤️"
+    "ouchSms": "🖤 Une faiblesse peut devenir une force.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 4,
     "coeur": "Tu mérites la même bienveillance que tu offres.",
+    "coeurSms": "✨ Pensée du jour ✨ Tu mérites la même bienveillance que tu offres.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Ton énergie attire.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Ton énergie attire.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Avance malgré la peur.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 4 ❤️"
+    "ouchSms": "🖤 Avance malgré la peur.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 5,
     "coeur": "Autorise-toi à être imparfaite.",
+    "coeurSms": "✨ Pensée du jour ✨ Autorise-toi à être imparfaite.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Le mystère naît de la confiance.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Le mystère naît de la confiance.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Chaque obstacle franchi est une victoire.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 5 ❤️"
+    "ouchSms": "🖤 Chaque obstacle franchi est une victoire.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 6,
     "coeur": "La femme que tu es mérite d’être célébrée.",
+    "coeurSms": "✨ Pensée du jour ✨ La femme que tu es mérite d’être célébrée.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Assume ce qui te rend unique.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Assume ce qui te rend unique.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "La puissance grandit sans permission.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 6 ❤️"
+    "ouchSms": "🖤 La puissance grandit sans permission.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 7,
     "coeur": "Prends conscience du chemin parcouru.",
+    "coeurSms": "✨ Pensée du jour ✨ Prends conscience du chemin parcouru.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "La séduction commence par le regard sur soi.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. La séduction commence par le regard sur soi.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Tu es plus forte que tu ne le crois.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 7 ❤️"
+    "ouchSms": "🖤 Tu es plus forte que tu ne le crois.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 8,
     "coeur": "Offre-toi un moment rien que pour toi.",
+    "coeurSms": "✨ Pensée du jour ✨ Offre-toi un moment rien que pour toi.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "L’audace ouvre des portes.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. L’audace ouvre des portes.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Les cicatrices racontent les plus belles victoires.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 8 ❤️"
+    "ouchSms": "🖤 Les cicatrices racontent les plus belles victoires.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 9,
     "coeur": "Respire et savoure l’instant présent.",
+    "coeurSms": "✨ Pensée du jour ✨ Respire et savoure l’instant présent.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Rayonne sans t’excuser.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Rayonne sans t’excuser.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Le courage change tout.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 9 ❤️"
+    "ouchSms": "🖤 Le courage change tout.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 10,
     "coeur": "Fais confiance à ton intuition.",
+    "coeurSms": "✨ Pensée du jour ✨ Fais confiance à ton intuition.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Sois fière de tes envies.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Sois fière de tes envies.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Choisis de te relever encore.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 10 ❤️"
+    "ouchSms": "🖤 Choisis de te relever encore.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 11,
     "coeur": "Tu possèdes déjà ce dont tu as besoin.",
+    "coeurSms": "✨ Pensée du jour ✨ Tu possèdes déjà ce dont tu as besoin.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Laisse parler ta féminité.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Laisse parler ta féminité.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "La résilience te définit.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 11 ❤️"
+    "ouchSms": "🖤 La résilience te définit.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 12,
     "coeur": "Accueille tes émotions avec tendresse.",
+    "coeurSms": "✨ Pensée du jour ✨ Accueille tes émotions avec tendresse.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Ton charme réside dans ton authenticité.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Ton charme réside dans ton authenticité.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Tu peux dépasser tes limites.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 12 ❤️"
+    "ouchSms": "🖤 Tu peux dépasser tes limites.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 13,
     "coeur": "Tu rayonnes davantage que tu ne le crois.",
+    "coeurSms": "✨ Pensée du jour ✨ Tu rayonnes davantage que tu ne le crois.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Ose surprendre.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Ose surprendre.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Les défis révèlent ton potentiel.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 13 ❤️"
+    "ouchSms": "🖤 Les défis révèlent ton potentiel.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 14,
     "coeur": "Prends soin de toi aujourd’hui.",
+    "coeurSms": "✨ Pensée du jour ✨ Prends soin de toi aujourd’hui.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Regarde-toi avec admiration.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Regarde-toi avec admiration.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Aie confiance en ta force intérieure.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 14 ❤️"
+    "ouchSms": "🖤 Aie confiance en ta force intérieure.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 15,
     "coeur": "L’amour commence par soi-même.",
+    "coeurSms": "✨ Pensée du jour ✨ L’amour commence par soi-même.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Tu es magnétique quand tu es toi-même.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Tu es magnétique quand tu es toi-même.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Continue d’avancer.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 15 ❤️"
+    "ouchSms": "🖤 Continue d’avancer.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 16,
     "coeur": "Chaque petit pas compte.",
+    "coeurSms": "✨ Pensée du jour ✨ Chaque petit pas compte.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Fais un pas vers ce qui t’attire.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Fais un pas vers ce qui t’attire.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Chaque épreuve enseigne quelque chose.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 16 ❤️"
+    "ouchSms": "🖤 Chaque épreuve enseigne quelque chose.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 17,
     "coeur": "Remercie-toi pour tes efforts.",
+    "coeurSms": "✨ Pensée du jour ✨ Remercie-toi pour tes efforts.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Affirme tes désirs.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Affirme tes désirs.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "La peur n’a pas le dernier mot.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 17 ❤️"
+    "ouchSms": "🖤 La peur n’a pas le dernier mot.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 18,
     "coeur": "Ton authenticité est précieuse.",
+    "coeurSms": "✨ Pensée du jour ✨ Ton authenticité est précieuse.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "La confiance est irrésistible.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. La confiance est irrésistible.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Transforme les obstacles en opportunités.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 18 ❤️"
+    "ouchSms": "🖤 Transforme les obstacles en opportunités.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 19,
     "coeur": "Tu as le droit de ralentir.",
+    "coeurSms": "✨ Pensée du jour ✨ Tu as le droit de ralentir.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Autorise-toi à briller.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Autorise-toi à briller.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Crois en ta puissance.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 19 ❤️"
+    "ouchSms": "🖤 Crois en ta puissance.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 20,
     "coeur": "La douceur est une force.",
+    "coeurSms": "✨ Pensée du jour ✨ La douceur est une force.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Chaque sourire est une invitation à la vie.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Chaque sourire est une invitation à la vie.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "La détermination ouvre les chemins.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 20 ❤️"
+    "ouchSms": "🖤 La détermination ouvre les chemins.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 21,
     "coeur": "Célèbre chaque victoire.",
+    "coeurSms": "✨ Pensée du jour ✨ Célèbre chaque victoire.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Savoure ton pouvoir personnel.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Savoure ton pouvoir personnel.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Rien n’est perdu tant que tu avances.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 21 ❤️"
+    "ouchSms": "🖤 Rien n’est perdu tant que tu avances.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 22,
     "coeur": "Tu es unique.",
+    "coeurSms": "✨ Pensée du jour ✨ Tu es unique.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Choisis l’audace.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Choisis l’audace.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Tu possèdes une force remarquable.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 22 ❤️"
+    "ouchSms": "🖤 Tu possèdes une force remarquable.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 23,
     "coeur": "Aime la personne que tu deviens.",
+    "coeurSms": "✨ Pensée du jour ✨ Aime la personne que tu deviens.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Reste fidèle à toi-même.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Reste fidèle à toi-même.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Sois la héroïne de ton histoire.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 23 ❤️"
+    "ouchSms": "🖤 Sois la héroïne de ton histoire.",
+    "ouchImage": "images/fond-ouch.jpg"
   },
   {
     "jour": 24,
     "coeur": "Merci d’être toi.",
+    "coeurSms": "✨ Pensée du jour ✨ Merci d’être toi.",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "Tu es sublime lorsque tu t’assumes.",
+    "hotSms": "❤️ J’ai pensé à toi aujourd’hui. Tu es sublime lorsque tu t’assumes.",
     "hotImage": "images/fond-hot.jpg",
     "ouch": "Révèle la tigresse qui sommeille en toi.",
-    "ouchImage": "images/fond-ouch.jpg",
-    "sms": "Pensée du jour 24 ❤️"
+    "ouchSms": "🖤 Révèle la tigresse qui sommeille en toi.",
+    "ouchImage": "images/fond-ouch.jpg"
   }
 ]
