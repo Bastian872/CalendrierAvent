@@ -306,17 +306,19 @@ body{
 }
 #messageScreen{
 
+    display:none;
+
     position:relative;
 
     min-height:100vh;
 
+    overflow:hidden;
+
     background-size:cover;
 
-    background-position:center;
+    background-position:center 15%;
 
     background-repeat:no-repeat;
-
-    overflow:hidden;
 }
 
 #messageScreen::before{
@@ -339,23 +341,27 @@ body{
 
 .message-overlay{
 
-    position:relative;
+    position:absolute;
+
+    inset:0;
 
     z-index:2;
 
-    min-height:100vh;
-
     overflow-y:auto;
 
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
     padding-top:180px;
+
+    padding-bottom:120px;
 
     padding-left:30px;
 
     padding-right:30px;
-
-    padding-bottom:150px;
-
-    text-align:center;
 }
 .message-topbar{
 
