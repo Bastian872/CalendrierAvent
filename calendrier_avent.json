@@ -1,8 +1,8 @@
 [
   {
     "jour": 1,
-    "coeur": "✨ Question du jour ✨ Qu'est qui t'a fait craquer pour moi ?",
-    "coeurSms": "✨ Question du jour ✨ Qu'est qui t'a fait craquer pour moi ?",
+    "coeur": "✨ Question du jour ✨ \nQu'est qui t'a fait craquer pour moi ?",
+    "coeurSms": "✨ Question du jour ✨ \nQu'est qui t'a fait craquer pour moi ?",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "JE SUIS SUR L'ÉCRAN",
     "hotSms": "JE SUIS DANS LE SMS",
@@ -13,8 +13,8 @@
   },
   {
     "jour": 2,
-    "coeur": "✨ Question du jour ✨ Si tu pouvais revivre une journée, laquelle serait-ce ?",
-    "coeurSms": "✨ Question du jour ✨ Si tu pouvais revivre une journée, laquelle serait-ce ?",
+    "coeur": "✨ Question du jour ✨ \nSi tu pouvais revivre une journée, laquelle serait-ce ?",
+    "coeurSms": "✨ Question du jour ✨ \nSi tu pouvais revivre une journée, laquelle serait-ce ?",
     "coeurImage": "images/fond-coeur.jpg",
     "hot": "La confiance est ton plus bel atout.",
     "hotSms": "❤️ J’ai pensé à toi aujourd’hui. La confiance est ton plus bel atout.",
