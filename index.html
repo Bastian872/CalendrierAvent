@@ -490,6 +490,24 @@ body{
     display:none;
 }
 
+.fade-out{
+
+    opacity:0;
+
+    transform:scale(.98);
+
+    transition:.5s ease;
+}
+
+.fade-in{
+
+    opacity:1;
+
+    transform:scale(1);
+
+    transition:.8s ease;
+}
+
 </style>
 </head><body>
 <div id="homeScreen"><div class="date" id="todayDate"></div>
@@ -589,9 +607,43 @@ showMessage(
 
 });
 let currentSms = "";
-function showMessage(t,m,sms,i){homeScreen.style.display='none';messageScreen.style.display='block';cardTitle.innerText=t;cardMessage.innerText=m;currentSms = sms;document.getElementById('fixedBackground')
-    .style.backgroundImage =
-    `url('${i}')`;}
+function showMessage(
+    t,
+    m,
+    sms,
+    i
+){
+
+    homeScreen.classList.add(
+        "fade-out"
+    );
+
+    setTimeout(() => {
+
+        homeScreen.style.display =
+            "none";
+
+        messageScreen.style.display =
+            "block";
+
+        messageScreen.classList.add(
+            "fade-in"
+        );
+
+        cardTitle.innerText = t;
+
+        cardMessage.innerText = m;
+
+        currentSms = sms;
+
+        document.getElementById(
+            'fixedBackground'
+        ).style.backgroundImage =
+        `url('${i}')`;
+
+    },400);
+}
+
 function goBack(){messageScreen.style.display='none';homeScreen.style.display='block';}
 function sendMessage(){
 
