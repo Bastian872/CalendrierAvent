@@ -280,6 +280,59 @@ body{
 
     transform:scale(1.15);
 }
+#messageScreen{
+
+    position:relative;
+
+    min-height:100vh;
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    overflow:hidden;
+}
+
+#messageScreen::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,.10),
+        rgba(0,0,0,.65)
+    );
+
+    z-index:1;
+}
+
+.message-overlay{
+
+    position:relative;
+
+    z-index:2;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    padding:40px;
+
+    text-align:center;
+}
 
 </style>
 </head><body>
@@ -305,28 +358,26 @@ body{
 </div>
 <div id="messageScreen">
 
-    <div class="message-container">
+    <div id="cardImage"></div>
 
-        <div id="cardImage"></div>
+    <div class="message-overlay">
 
-        <div class="message-panel">
+        <div id="cardTitle" class="bigTitle"></div>
 
-            <div id="cardTitle"
-                 class="bigTitle">
-            </div>
+        <div id="cardMessage" class="message"></div>
 
-            <div id="cardMessage"
-                 class="message">
-            </div>
-
-        </div>
-
-        <div class="share"
-             onclick="sendMessage()">
-
+        <div class="share" onclick="sendMessage()">
             💌❤️
-
         </div>
+
+        <div class="backButton" onclick="goBack()">
+            ←
+        </div>
+
+    </div>
+
+</div>
+
 
 <div class="backButton" onclick="goBack()">
     ←
@@ -339,7 +390,7 @@ body{
 <script>
 const d=new Date();const mois=['JANVIER','FÉVRIER','MARS','AVRIL','MAI','JUIN','JUILLET','AOÛT','SEPTEMBRE','OCTOBRE','NOVEMBRE','DÉCEMBRE'];document.getElementById('todayDate').innerText=d.getDate()+' '+mois[d.getMonth()];
 let contenu=null;fetch('calendrier_avent.json').then(r=>r.json()).then(data=>{const jour=d.getDate();contenu=data.find(i=>i.jour===jour)||data[0];document.querySelector('.heartCard').onclick=()=>showMessage('♡',contenu.coeur||'',contenu.coeurImage||'');document.querySelector('.hotCard').onclick=()=>showMessage('HOT',contenu.hot||'',contenu.hotImage||'');document.querySelector('.ouchCard').onclick=()=>showMessage('OUCH!',contenu.ouch||'',contenu.ouchImage||'');});
-function showMessage(t,m,i){homeScreen.style.display='none';messageScreen.style.display='block';cardTitle.innerText=t;cardMessage.innerText=m;cardImage.innerHTML=i?`<img src="${i}">`:'';}
+function showMessage(t,m,i){homeScreen.style.display='none';messageScreen.style.display='block';cardTitle.innerText=t;cardMessage.innerText=m;messageScreen.style.backgroundImage = `url('${i}')`;}
 function goBack(){messageScreen.style.display='none';homeScreen.style.display='block';}
 function sendMessage(){const txt=encodeURIComponent(cardMessage.innerText);window.location.href=`sms:+33623474165?body=${txt}`;}
 if('serviceWorker' in navigator){navigator.serviceWorker.register('service-worker.js');}
