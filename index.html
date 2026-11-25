@@ -14,7 +14,13 @@
 <title>Calendrier Avent Premium</title>
 <style>
     html{
-    background:#000000;
+    background:
+linear-gradient(
+    180deg,
+    #1a140d 0%,
+    #0d0d0d 35%,
+    #000000 100%
+);
 }
 
 body{
@@ -47,18 +53,45 @@ body{
 
     color:#D4AF37;
 
-    font-size:42px;
+    font-size:40px;
 
-    font-weight:700;
+    font-weight:300;
 
-    letter-spacing:6px;
+    letter-spacing:12px;
 
-    margin-top:30px;
-
-    margin-bottom:10px;
+    text-transform:uppercase;
 
     text-shadow:
-        0 0 15px rgba(212,175,55,.35);
+        0 0 10px rgba(212,175,55,.35);
+
+    margin-top:40px;
+    position:relative;
+}
+.date::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    width:300px;
+
+    height:80px;
+
+    transform:translate(-50%,-50%);
+
+    background:
+    radial-gradient(
+        rgba(212,175,55,.15),
+        transparent
+    );
+
+    filter:blur(20px);
+
+    z-index:-1;
 }
 
 .card{
