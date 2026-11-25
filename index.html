@@ -439,17 +439,13 @@ top:18px;
 
     display:none;
 
-    position:relative;
+    position:fixed;
 
-    min-height:100vh;
+    inset:0;
 
     overflow:hidden;
 
-    background-size:cover;
-
-    background-position:center 15%;
-
-    background-repeat:no-repeat;
+    z-index:5;
 }
 
 #messageScreen::before{
@@ -575,16 +571,13 @@ body{
 
     position:absolute;
 
-    top:120px;
+    top:50px;
 
     left:0;
 
     right:0;
 
-    bottom:120px;
-
-    height:100vh;
-
+    bottom:0;
 
     overflow-y:auto;
 
