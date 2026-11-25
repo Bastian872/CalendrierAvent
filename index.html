@@ -142,6 +142,27 @@ body{
 
     background-attachment:fixed;
 }
+#fixedBackground{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100vw;
+
+    height:100vh;
+
+    z-index:0;
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+}
+
 
 
 .bigTitle{
@@ -428,6 +449,8 @@ body{
 </div>
 <div id="messageScreen">
 
+    <div id="fixedBackground"></div>
+
     <div id="cardImage"></div>
 
     <div class="message-overlay">
@@ -471,7 +494,9 @@ body{
 <script>
 const d=new Date();const mois=['JANVIER','FÉVRIER','MARS','AVRIL','MAI','JUIN','JUILLET','AOÛT','SEPTEMBRE','OCTOBRE','NOVEMBRE','DÉCEMBRE'];document.getElementById('todayDate').innerText=d.getDate()+' '+mois[d.getMonth()];
 let contenu=null;fetch('calendrier_avent.json').then(r=>r.json()).then(data=>{const jour=d.getDate();contenu=data.find(i=>i.jour===jour)||data[0];document.querySelector('.heartCard').onclick=()=>showMessage('♡',contenu.coeur||'',contenu.coeurImage||'');document.querySelector('.hotCard').onclick=()=>showMessage('HOT',contenu.hot||'',contenu.hotImage||'');document.querySelector('.ouchCard').onclick=()=>showMessage('OUCH!',contenu.ouch||'',contenu.ouchImage||'');});
-function showMessage(t,m,i){homeScreen.style.display='none';messageScreen.style.display='block';cardTitle.innerText=t;cardMessage.innerText=m;messageScreen.style.backgroundImage = `url('${i}')`;}
+function showMessage(t,m,i){homeScreen.style.display='none';messageScreen.style.display='block';cardTitle.innerText=t;cardMessage.innerText=m;document.getElementById('fixedBackground')
+    .style.backgroundImage =
+    `url('${i}')`;}
 function goBack(){messageScreen.style.display='none';homeScreen.style.display='block';}
 function sendMessage(){const txt=encodeURIComponent(cardMessage.innerText);window.location.href=`sms:+33623474165?body=${txt}`;}
 if('serviceWorker' in navigator){navigator.serviceWorker.register('service-worker.js');}
