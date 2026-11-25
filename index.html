@@ -128,7 +128,11 @@ body{
 .title{font-size:52px;font-weight:700}.subtitle{font-size:24px}.heartCard .title,.heartCard .subtitle{color:#111}.hotCard .title,.hotCard .subtitle,.ouchCard .title,.ouchCard .subtitle{color:white}
 #messageScreen{
 
-position:relative;
+    display:none;
+
+    position:relative;
+
+    min-height:100vh;
 
     background-size:cover;
 
@@ -423,14 +427,19 @@ position:relative;
              onclick="sendMessage()">
             💌
         </div>
+        </div>
+<div id="cardTitle"
+     class="bigTitle">
+</div>
+
+<div id="cardMessage"
+     class="message">
+</div>
+</div>
 
     </div>
 
-    <div id="cardTitle"
-         class="bigTitle"></div>
-
-    <div id="cardMessage"
-         class="message"></div>
+    
 
 </div>
 
