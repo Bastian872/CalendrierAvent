@@ -285,15 +285,20 @@ body{
     padding:0 20px;
 }
 
-.share{
+.share img{
 
-    font-size:120px;
+    width:140px;
 
-    cursor:pointer;
+    height:auto;
 
-    text-shadow:none;
+    display:block;
 
-    filter:none;
+    transition:.3s ease;
+}
+
+.share img:hover{
+
+    transform:scale(1.05);
 }
 
 .share:hover{
@@ -452,7 +457,7 @@ body{
     <div id="fixedBackground"></div>
 
     <div id="cardImage"></div>
-    
+
 <div class="message-topbar">
 
         <div class="backButton"
@@ -461,9 +466,12 @@ body{
         </div>
 
         <div class="share"
-             onclick="sendMessage()">
-            💌
-        </div>
+     onclick="sendMessage()">
+
+    <img src="ui/envelope-heart.png"
+         alt="Envoyer">
+
+</div>
         </div>
 
     <div class="message-overlay">
