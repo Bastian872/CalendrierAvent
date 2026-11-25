@@ -644,7 +644,31 @@ function showMessage(
     },400);
 }
 
-function goBack(){messageScreen.style.display='none';homeScreen.style.display='block';}
+function goBack(){
+
+    messageScreen.classList.add(
+        "fade-out"
+    );
+
+    setTimeout(() => {
+
+        messageScreen.style.display =
+            "none";
+
+        homeScreen.style.display =
+            "block";
+
+        messageScreen.classList.remove(
+            "fade-out"
+        );
+
+        homeScreen.classList.remove(
+            "fade-out"
+        );
+
+    },300);
+}
+
 function sendMessage(){
 
     const txt =
