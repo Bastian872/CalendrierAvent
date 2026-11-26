@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 
-excel_file ="Calendrier_Avent_SMS_Differencies.xlsx"
+excel_file ="Calendrier_Avent_V2_Couple.xlsx"
 
 json_file = "calendrier_avent.json"
 
