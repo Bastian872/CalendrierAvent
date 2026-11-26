@@ -605,6 +605,48 @@ body{
     font-size:46px;
 }
 
+#userAnswer{
+
+    width:80vw;
+
+    max-width:500px;
+
+    height:120px;
+
+    margin-top:30px;
+
+    border-radius:20px;
+
+    border:none;
+
+    padding:20px;
+
+    font-size:18px;
+
+    resize:none;
+}
+
+#answerButton{
+
+    margin-top:20px;
+
+    padding:15px 25px;
+
+    border-radius:20px;
+
+    border:none;
+
+    background:#D4AF37;
+
+    color:black;
+
+    font-size:18px;
+
+    cursor:pointer;
+}
+
+
+
 </style>
 </head><body>
 <div id="homeScreen"><div class="date" id="todayDate"></div>
@@ -633,7 +675,7 @@ body{
 
     <div id="cardImage"></div>
 
-<div class="message-topbar">
+    <div class="message-topbar">
 
         <div class="backButton"
              onclick="goBack()">
@@ -641,46 +683,46 @@ body{
         </div>
 
         <div class="share"
-     onclick="sendMessage()">
+             onclick="sendMessage()">
 
-    <img src="ui/envelope-heart.png"
-         alt="Envoyer">
+            <img
+                 src="ui/envelope-heart.png"
+                 alt="Envoyer">
 
-</div>
         </div>
+
+    </div>
 
     <div class="message-overlay">
 
-    
-<div class="message-scroll">
+        <div class="message-scroll">
 
-    <div id="cardTitle"
-         class="bigTitle">
+            <div id="cardTitle"
+                 class="bigTitle">
+            </div>
+
+            <div id="cardMessage"
+                 class="message">
+            </div>
+
+            <textarea
+                id="userAnswer"
+                placeholder="Votre réponse...">
+            </textarea>
+
+            <button
+                id="answerButton"
+                onclick="sendAnswer()">
+
+                Envoyer ma réponse
+
+            </button>
+
+        </div>
+
     </div>
 
-    <div id="cardMessage"
-         class="message">
-    </div>
-
 </div>
-
-</div>
-
-    </div>
-
-    
-
-</div>
-
-</div>
-
-
-
-
-    </div>
-
-</div>
-
 <script>
 const d=new Date();const mois=['JANVIER','FÉVRIER','MARS','AVRIL','MAI','JUIN','JUILLET','AOÛT','SEPTEMBRE','OCTOBRE','NOVEMBRE','DÉCEMBRE'];document.getElementById('todayDate')
 .innerHTML =
@@ -803,5 +845,24 @@ function sendMessage(){
     window.location.href =
         `sms:+33623474165?body=${txt}`;
 }
+
+function sendAnswer(){
+
+    const answer =
+        document.getElementById(
+            'userAnswer'
+        ).value;
+
+    const text =
+        encodeURIComponent(
+            currentSms
+            + "\n\nRéponse :\n"
+            + answer
+        );
+
+    window.location.href =
+        `sms:+33623474165?body=${text}`;
+}
+
 if('serviceWorker' in navigator){navigator.serviceWorker.register('service-worker.js');}
 </script></body></html>
